@@ -64,17 +64,47 @@ A campus-focused carbon footprint tracking and rewards application designed to e
 
 ---
 
-## 📊 GitHub Statistics
+
+---
+
+## GitHub Statistics
 
 <p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=priyanshupatel-14&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="Priyanshu's GitHub statistics" />
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=priyanshupatel-14&layout=compact&theme=tokyonight&hide_border=true" alt="Most-used programming languages" />
+  <img
+    width="49%"
+    src="https://github-readme-stats.vercel.app/api?username=priyanshupatel-14&show_icons=true&hide_border=true&bg_color=0D1117&title_color=70A5FD&text_color=C9D1D9&icon_color=BF91F3&ring_color=70A5FD&include_all_commits=true"
+    alt="GitHub statistics"
+  />
+  <img
+    width="49%"
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=priyanshupatel-14&layout=compact&hide_border=true&bg_color=0D1117&title_color=70A5FD&text_color=C9D1D9&langs_count=6"
+    alt="Most used programming languages"
+  />
 </p>
 
-### Contribution Activity
+## Contribution Activity
 
 <p align="center">
-  <img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=priyanshupatel-14&theme=tokyo-night&hide_border=true&area=true" alt="GitHub contribution activity graph" />
+  <img
+    width="98%"
+    src="https://github-readme-activity-graph.vercel.app/graph?username=priyanshupatel-14&bg_color=0D1117&color=70A5FD&line=BF91F3&point=38BDAE&area=true&hide_border=true&custom_title=Contribution%20Overview"
+    alt="GitHub contribution activity graph"
+  />
+</p>
+
+<p align="center">
+  <a href="https://github.com/priyanshupatel-14?tab=repositories">
+    <img
+      src="https://img.shields.io/badge/Explore%20Repositories-161B22?style=for-the-badge&logo=github&logoColor=70A5FD"
+      alt="Explore repositories"
+    />
+  </a>
+  <a href="https://github.com/priyanshupatel-14?tab=stars">
+    <img
+      src="https://img.shields.io/badge/Starred%20Projects-161B22?style=for-the-badge&logo=githubsponsors&logoColor=BF91F3"
+      alt="Starred projects"
+    />
+  </a>
 </p>
 
 ---
