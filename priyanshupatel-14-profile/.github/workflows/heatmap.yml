@@ -1,0 +1,43 @@
+name: Update profile graphics
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # every 6 hours
+  workflow_dispatch:          # "Run workflow" button in the Actions tab
+  push:
+    branches: [main]
+    paths: ["scripts/**"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: heatmap
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate heatmap SVG
+        env:
+          GH_USER: ${{ github.repository_owner }}
+          # Optional: add a PAT (read:user) as secret CONTRIB_TOKEN to include private contributions
+          GITHUB_TOKEN: ${{ secrets.CONTRIB_TOKEN || secrets.GITHUB_TOKEN }}
+        run: |
+          python3 scripts/generate_heatmap.py
+          python3 scripts/generate_header.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update profile graphics [skip ci]"
+            git push
+          fi
