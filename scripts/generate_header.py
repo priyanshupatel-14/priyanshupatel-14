@@ -22,7 +22,6 @@ LINES = [  # typed one after another, on a loop (keep each under ~45 characters)
     "Building intelligent systems with AI & ML",
     "Full-stack apps with Flutter + Spring Boot",
     "WiFi pentesting and wireless security",
-    "Shipping CarbonTrack for greener campuses",
 ]
 
 W, H = 799, 214            # same width as the heatmap so the two line up

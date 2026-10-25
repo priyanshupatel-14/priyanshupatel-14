@@ -20,13 +20,6 @@
   <img src="https://img.shields.io/badge/WiFi%20Pentesting-0A1633?style=for-the-badge&logoColor=7DE3FF" alt="WiFi Pentesting" />
 </p>
 
-<p align="center">
-  🌱 <b>Featured project:</b> <a href="https://github.com/priyanshupatel-14/CarbonTrack">CarbonTrack</a> —
-  a campus carbon-footprint tracker with rewards, evidence-based activity verification
-  and role-based access for students, administrators and merchants
-  <br /><sub>Flutter · Java · Spring Boot · PostgreSQL</sub>
-</p>
-
 <h2 align="center">Tech Stack</h2>
 
 <p align="center"><b>Languages</b></p>
