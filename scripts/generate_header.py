@@ -35,7 +35,7 @@ TARGETS = [(CX - 205, 68), (CX + 200, 76), (CX - 70, 58), (CX + 95, 62)]
 
 CSS = """
 text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
-.mono{font-family:"Fira Code","JetBrains Mono",SFMono-Regular,Consolas,"Liberation Mono",monospace}
+.mono,.mono text{font-family:"Fira Code","JetBrains Mono",SFMono-Regular,Consolas,"Liberation Mono",monospace}
 .bolt,.spark{opacity:0;animation:zap var(--t) linear var(--o) infinite}
 @keyframes zap{
  0%,100%{opacity:0}
@@ -58,7 +58,14 @@ text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
 
 
 def typing(i, text, n_lines):
-    """Clip-reveal typing for one line: types, holds, erases, waits its turn."""
+    """Typing for one line: types, holds, erases, waits its turn.
+
+    Every character is its own <text> that fades in/out via SMIL opacity. This
+    deliberately avoids animating a <clipPath>: WebKit (every browser on iOS,
+    plus Safari and the GitHub iOS app) never updates the clip, so all lines
+    showed at once. With animation unsupported, line 0 stays visible (opacity=1)
+    and the other lines stay hidden, so the static fallback is one clean line.
+    """
     n = len(text)
     wtot = n * CHAR_W
     x0 = CX - wtot / 2
@@ -69,26 +76,34 @@ def typing(i, text, n_lines):
     ev = [(0.0, 0.0)] + [(start + k * TYPE_DT, k * CHAR_W) for k in range(1, n + 1)]
     ev += [(t_hold + j * ERASE_DT, (n - j) * CHAR_W) for j in range(1, n + 1)]
     kt = ";".join(f"{t / period:.5f}" for t, _ in ev)
-    widths = ";".join(f"{w:.1f}" for _, w in ev)
     xs = ";".join(f"{x0 + w:.1f}" for _, w in ev)
 
     if start > 0:
         ck, cv = f"0;{start / period:.5f};{t_end / period:.5f}", "0;1;0"
     else:
         ck, cv = f"0;{t_end / period:.5f}", "1;0"
-    first = f"{wtot:.1f}" if FLASH and i == 0 else "0"
     dur = f'dur="{period}s" repeatCount="indefinite" calcMode="discrete"'
+    base = "1" if i == 0 else "0"
 
-    clip = (f'<clipPath id="tc{i}"><rect x="{x0 - 2:.1f}" y="{TYPE_Y - 20}" height="30" width="{first}">'
-            f'<animate attributeName="width" {dur} keyTimes="{kt}" values="{widths}"/></rect></clipPath>')
-    label = (f'<text class="mono" x="{x0:.1f}" y="{TYPE_Y}" font-size="{TYPE_SIZE}" fill="{STREAK}" '
-             f'textLength="{wtot:.1f}" lengthAdjust="spacing" clip-path="url(#tc{i})">'
-             f'{html.escape(text)}</text>')
+    chars = []
+    for j, ch in enumerate(text):
+        if ch == " ":
+            continue
+        t_on = start + (j + 1) * TYPE_DT
+        t_off = t_hold + (n - j) * ERASE_DT
+        cx = x0 + j * CHAR_W + CHAR_W / 2
+        chars.append(
+            f'<text x="{cx:.1f}" y="{TYPE_Y}" opacity="{base}">'
+            f'<animate attributeName="opacity" {dur} '
+            f'keyTimes="0;{t_on / period:.5f};{t_off / period:.5f}" values="0;1;0"/>'
+            f'{html.escape(ch, quote=False)}</text>')
+    label = (f'<g class="mono" font-size="{TYPE_SIZE}" fill="{STREAK}" text-anchor="middle">'
+             + "".join(chars) + "</g>")
     caret = (f'<rect y="{TYPE_Y - 17}" width="2" height="22" rx="1" fill="{STREAK}" '
              f'opacity="0" x="{x0:.1f}">'
              f'<animate attributeName="x" {dur} keyTimes="{kt}" values="{xs}"/>'
              f'<animate attributeName="opacity" {dur} keyTimes="{ck}" values="{cv}"/></rect>')
-    return clip, label, caret
+    return label, caret
 
 
 def build():
@@ -147,11 +162,10 @@ def build():
              f'text-anchor="middle">{html.escape(SUBTITLE)}</text>')
 
     # typing lines
-    clips, labels, carets = [], [], []
+    labels, carets = [], []
     for i, text in enumerate(LINES):
-        c, t, k = typing(i, text, len(LINES))
-        clips.append(c), labels.append(t), carets.append(k)
-    o[o.index("</defs>")] = "".join(clips) + "</defs>"
+        t, k = typing(i, text, len(LINES))
+        labels.append(t), carets.append(k)
     o += labels + carets
 
     # lightning striking the name
