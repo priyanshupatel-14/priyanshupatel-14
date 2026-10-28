@@ -24,7 +24,7 @@ text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
 <rect width="799" height="301" rx="12" fill="url(#sky)"/>
 <rect x=".5" y=".5" width="798" height="300" rx="12" fill="none" stroke="#1B2B52"/>
 <text x="36" y="28" font-size="15" font-weight="600" fill="#DCE8FF">187 contributions in the last year</text>
-<text x="775" y="28" font-size="12" fill="#6F86B3" text-anchor="end">Streak <tspan fill="#5CC8FF" font-weight="600">6d</tspan> · Longest <tspan fill="#8FB2FF" font-weight="600">6d</tspan></text>
+<text x="775" y="28" font-size="12" fill="#6F86B3" text-anchor="end">Streak <tspan fill="#5CC8FF" font-weight="600">0d</tspan> · Longest <tspan fill="#8FB2FF" font-weight="600">6d</tspan></text>
 <line x1="36" y1="273" x2="775" y2="273" stroke="url(#hz)" stroke-width="1"/>
 <text x="36" y="48" font-size="10" fill="#5D739E">Oct</text>
 <text x="120" y="48" font-size="10" fill="#5D739E">Dec</text>
@@ -408,6 +408,7 @@ text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
 <rect class="c3" x="764" y="56" width="11" height="11" rx="2.5"/>
 <rect class="c1" x="764" y="70" width="11" height="11" rx="2.5"/>
 <rect class="c0" x="764" y="84" width="11" height="11" rx="2.5"/>
+<rect class="c0" x="764" y="98" width="11" height="11" rx="2.5"/>
 <rect class="spark" x="750" y="56" width="11" height="11" rx="2.5" fill="#A8E6FF" style="--t:5.4s;--o:1.2s;--pk:0.32"/>
 <rect class="spark" x="750" y="70" width="11" height="11" rx="2.5" fill="#A8E6FF" style="--t:5.4s;--o:1.2s;--pk:0.5"/>
 <rect class="spark" x="750" y="84" width="11" height="11" rx="2.5" fill="#A8E6FF" style="--t:5.4s;--o:1.2s;--pk:0.32"/>
