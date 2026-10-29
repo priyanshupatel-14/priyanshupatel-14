@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="799" height="301" viewBox="0 0 799 301" role="img" aria-label="Wardenclyffe Tower striking lightning on a contribution calendar: 188 contributions in the last year">
+<svg xmlns="http://www.w3.org/2000/svg" width="799" height="301" viewBox="0 0 799 301" role="img" aria-label="Wardenclyffe Tower striking lightning on a contribution calendar: 189 contributions in the last year">
 <style>
 text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
 .c0{fill:#0E1A33}.c1{fill:#14336B}.c2{fill:#1E5BC6}.c3{fill:#3C9BFF}.c4{fill:#7DE3FF}
@@ -23,8 +23,8 @@ text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
 <rect width="799" height="301" rx="12" fill="#060B18"/>
 <rect width="799" height="301" rx="12" fill="url(#sky)"/>
 <rect x=".5" y=".5" width="798" height="300" rx="12" fill="none" stroke="#1B2B52"/>
-<text x="36" y="28" font-size="15" font-weight="600" fill="#DCE8FF">188 contributions in the last year</text>
-<text x="775" y="28" font-size="12" fill="#6F86B3" text-anchor="end">Streak <tspan fill="#5CC8FF" font-weight="600">1d</tspan> · Longest <tspan fill="#8FB2FF" font-weight="600">6d</tspan></text>
+<text x="36" y="28" font-size="15" font-weight="600" fill="#DCE8FF">189 contributions in the last year</text>
+<text x="775" y="28" font-size="12" fill="#6F86B3" text-anchor="end">Streak <tspan fill="#5CC8FF" font-weight="600">2d</tspan> · Longest <tspan fill="#8FB2FF" font-weight="600">6d</tspan></text>
 <line x1="36" y1="273" x2="775" y2="273" stroke="url(#hz)" stroke-width="1"/>
 <text x="36" y="48" font-size="10" fill="#5D739E">Oct</text>
 <text x="120" y="48" font-size="10" fill="#5D739E">Dec</text>
@@ -409,13 +409,12 @@ text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
 <rect class="c1" x="764" y="70" width="11" height="11" rx="2.5"/>
 <rect class="c0" x="764" y="84" width="11" height="11" rx="2.5"/>
 <rect class="c1" x="764" y="98" width="11" height="11" rx="2.5"/>
-<rect class="c0" x="764" y="112" width="11" height="11" rx="2.5"/>
-<rect class="spark" x="750" y="84" width="11" height="11" rx="2.5" fill="#A8E6FF" style="--t:5.4s;--o:1.2s;--pk:0.32"/>
-<rect class="spark" x="750" y="98" width="11" height="11" rx="2.5" fill="#A8E6FF" style="--t:5.4s;--o:1.2s;--pk:0.5"/>
-<rect class="spark" x="750" y="112" width="11" height="11" rx="2.5" fill="#A8E6FF" style="--t:5.4s;--o:1.2s;--pk:0.32"/>
-<rect class="spark" x="764" y="84" width="11" height="11" rx="2.5" fill="#A8E6FF" style="--t:5.4s;--o:1.2s;--pk:0.5"/>
-<rect class="spark" x="764" y="98" width="11" height="11" rx="2.5" fill="#A8E6FF" style="--t:5.4s;--o:1.2s;--pk:0.95"/>
-<rect class="spark" x="764" y="112" width="11" height="11" rx="2.5" fill="#A8E6FF" style="--t:5.4s;--o:1.2s;--pk:0.5"/>
+<rect class="c1" x="764" y="112" width="11" height="11" rx="2.5"/>
+<rect class="spark" x="750" y="98" width="11" height="11" rx="2.5" fill="#A8E6FF" style="--t:5.4s;--o:1.2s;--pk:0.32"/>
+<rect class="spark" x="750" y="112" width="11" height="11" rx="2.5" fill="#A8E6FF" style="--t:5.4s;--o:1.2s;--pk:0.5"/>
+<rect class="spark" x="750" y="126" width="11" height="11" rx="2.5" fill="#A8E6FF" style="--t:5.4s;--o:1.2s;--pk:0.32"/>
+<rect class="spark" x="764" y="98" width="11" height="11" rx="2.5" fill="#A8E6FF" style="--t:5.4s;--o:1.2s;--pk:0.5"/>
+<rect class="spark" x="764" y="112" width="11" height="11" rx="2.5" fill="#A8E6FF" style="--t:5.4s;--o:1.2s;--pk:0.95"/>
 <rect class="spark" x="484" y="70" width="11" height="11" rx="2.5" fill="#A8E6FF" style="--t:6.3s;--o:3.1s;--pk:0.32"/>
 <rect class="spark" x="484" y="84" width="11" height="11" rx="2.5" fill="#A8E6FF" style="--t:6.3s;--o:3.1s;--pk:0.5"/>
 <rect class="spark" x="484" y="98" width="11" height="11" rx="2.5" fill="#A8E6FF" style="--t:6.3s;--o:3.1s;--pk:0.32"/>
@@ -448,13 +447,13 @@ text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
 <rect class="spark" x="596" y="70" width="11" height="11" rx="2.5" fill="#A8E6FF" style="--t:6.7s;--o:2.2s;--pk:0.32"/>
 <g class="bolt b0" style="--t:5.4s;--o:1.2s;--pk:1">
 <rect width="799" height="301" rx="12" fill="#A8E6FF" opacity=".06"/>
-<circle cx="769.5" cy="103.5" r="22" fill="url(#halo)"/>
-<polyline points="392.9,188.0 404.9,186.2 417.0,184.9 429.2,184.2 440.6,179.6 451.0,172.9 462.8,169.5 474.9,167.9 486.2,163.1 497.4,158.2 508.4,152.9 519.9,148.7 532.3,148.4 544.2,146.2 555.9,143.1 566.9,137.8 579.1,136.4 591.5,135.0 603.8,137.2 615.6,133.5 627.6,131.0 640.1,131.5 651.9,135.5 663.9,131.9 676.5,132.5 687.7,127.2 697.8,119.9 708.6,113.7 720.6,110.5 732.8,107.3 745.3,108.8 757.3,105.7 769.5,103.5" fill="none" stroke="#2D7BFF" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" filter="url(#glow)"/>
-<polyline points="486.2,163.1 486.5,159.7 483.7,157.7 484.4,154.8 485.5,152.1 486.9,148.6 490.6,147.9 491.3,144.2 488.7,141.6" fill="none" stroke="#2D7BFF" stroke-width="3" stroke-linejoin="round" filter="url(#glow)"/>
-<polyline points="663.9,131.9 666.7,129.0 665.7,125.2 667.6,122.0 666.5,118.4 665.8,114.6 662.4,112.7 659.5,109.8 660.9,105.9" fill="none" stroke="#2D7BFF" stroke-width="3" stroke-linejoin="round" filter="url(#glow)"/>
-<polyline points="486.2,163.1 486.5,159.7 483.7,157.7 484.4,154.8 485.5,152.1 486.9,148.6 490.6,147.9 491.3,144.2 488.7,141.6" fill="none" stroke="#D8F3FF" stroke-width=".9" stroke-linejoin="round" opacity=".8"/>
-<polyline points="663.9,131.9 666.7,129.0 665.7,125.2 667.6,122.0 666.5,118.4 665.8,114.6 662.4,112.7 659.5,109.8 660.9,105.9" fill="none" stroke="#D8F3FF" stroke-width=".9" stroke-linejoin="round" opacity=".8"/>
-<polyline points="392.9,188.0 404.9,186.2 417.0,184.9 429.2,184.2 440.6,179.6 451.0,172.9 462.8,169.5 474.9,167.9 486.2,163.1 497.4,158.2 508.4,152.9 519.9,148.7 532.3,148.4 544.2,146.2 555.9,143.1 566.9,137.8 579.1,136.4 591.5,135.0 603.8,137.2 615.6,133.5 627.6,131.0 640.1,131.5 651.9,135.5 663.9,131.9 676.5,132.5 687.7,127.2 697.8,119.9 708.6,113.7 720.6,110.5 732.8,107.3 745.3,108.8 757.3,105.7 769.5,103.5" fill="none" stroke="#D8F3FF" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="769.5" cy="117.5" r="22" fill="url(#halo)"/>
+<polyline points="393.2,188.0 405.1,185.5 417.2,183.8 429.3,182.7 441.5,183.1 453.2,179.8 464.8,175.8 474.4,168.1 486.1,163.9 498.0,162.1 509.8,160.0 521.9,158.7 533.2,154.4 545.0,151.4 557.1,151.5 569.2,149.3 581.2,151.9 592.5,146.8 604.8,145.6 616.8,142.9 629.0,143.8 640.2,138.9 651.9,135.5 663.2,130.9 673.4,124.2 685.6,125.5 697.7,126.0 709.9,124.5 721.4,120.3 733.5,120.0 745.4,118.2 757.5,119.6 769.5,117.5" fill="none" stroke="#2D7BFF" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" filter="url(#glow)"/>
+<polyline points="629.0,143.8 631.0,138.2 635.0,133.8 634.9,127.6 639.0,122.9 641.5,117.3 645.7,112.8 650.6,108.8 657.0,108.4" fill="none" stroke="#2D7BFF" stroke-width="3" stroke-linejoin="round" filter="url(#glow)"/>
+<polyline points="509.8,160.0 515.0,157.6 518.6,153.1 524.7,153.0 528.9,148.7 529.0,142.7 532.3,137.7 536.9,134.3 540.7,129.9" fill="none" stroke="#2D7BFF" stroke-width="3" stroke-linejoin="round" filter="url(#glow)"/>
+<polyline points="629.0,143.8 631.0,138.2 635.0,133.8 634.9,127.6 639.0,122.9 641.5,117.3 645.7,112.8 650.6,108.8 657.0,108.4" fill="none" stroke="#D8F3FF" stroke-width=".9" stroke-linejoin="round" opacity=".8"/>
+<polyline points="509.8,160.0 515.0,157.6 518.6,153.1 524.7,153.0 528.9,148.7 529.0,142.7 532.3,137.7 536.9,134.3 540.7,129.9" fill="none" stroke="#D8F3FF" stroke-width=".9" stroke-linejoin="round" opacity=".8"/>
+<polyline points="393.2,188.0 405.1,185.5 417.2,183.8 429.3,182.7 441.5,183.1 453.2,179.8 464.8,175.8 474.4,168.1 486.1,163.9 498.0,162.1 509.8,160.0 521.9,158.7 533.2,154.4 545.0,151.4 557.1,151.5 569.2,149.3 581.2,151.9 592.5,146.8 604.8,145.6 616.8,142.9 629.0,143.8 640.2,138.9 651.9,135.5 663.2,130.9 673.4,124.2 685.6,125.5 697.7,126.0 709.9,124.5 721.4,120.3 733.5,120.0 745.4,118.2 757.5,119.6 769.5,117.5" fill="none" stroke="#D8F3FF" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
 </g>
 <g class="bolt b1" style="--t:6.3s;--o:3.1s;--pk:1">
 <rect width="799" height="301" rx="12" fill="#A8E6FF" opacity=".06"/>
